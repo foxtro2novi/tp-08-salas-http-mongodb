@@ -1,0 +1,19 @@
+<h2><%= titulo %></h2>
+<p class="subtitulo">Sección: <%= locals.seccion %></p>
+
+<article class="tarjeta-panel" style="max-width: 600px; margin: 0 auto;">
+    <h3 style="margin-bottom: 1.5rem; color: var(--color-acento);">Detalle del Turno #<%= reserva.id %></h3>
+    
+    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+        <p><strong>Estudiante Responsable:</strong> <%= reserva.estudiante %></p>
+        <p><strong>Correo electrónico:</strong> <%= reserva.email %></p>
+        <p><strong>Sala Asignada:</strong> <%= reserva.sala %></p>
+        <p><strong>Fecha:</strong> <%= reserva.fecha %></p>
+        <p><strong>Turno:</strong> <%= reserva.turno %></p>
+        <p><strong>Cantidad de Personas:</strong> <%= reserva.personas %> asistentes</p>
+    </div>
+
+    <div style="margin-top: 2rem; text-align: center;">
+        <a href="/reservas" class="boton boton-secundario">Volver al listado</a>
+    </div>
+</article>

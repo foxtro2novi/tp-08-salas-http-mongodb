@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "estudiante": "Juan Pérez",
+    "email": "juan@mail.com",
+    "sala": "Sala Norte",
+    "fecha": "2026-10-15",
+    "turno": "Mañana",
+    "personas": 4
+  },
+  {
+    "id": 2,
+    "estudiante": "María Gómez",
+    "email": "maria@mail.com",
+    "sala": "Sala Sur",
+    "fecha": "2026-10-16",
+    "turno": "Tarde",
+    "personas": 2
+  }
+]

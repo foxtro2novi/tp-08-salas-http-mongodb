@@ -1,0 +1,52 @@
+<h2><%= titulo %></h2>
+<p class="subtitulo">Sección: <%= locals.seccion %></p>
+
+<% if (error) { %>
+    <div class="alerta-error" role="alert">
+        <strong>Atención:</strong> <%= error %>
+    </div>
+<% } %>
+
+<div class="tarjeta-panel">
+    <form action="/reservas" method="POST" class="formulario-reserva">
+        <div class="campo">
+            <label for="estudiante">Nombre del Estudiante:</label>
+            <input type="text" id="estudiante" name="estudiante" value="<%= valores.estudiante || '' %>">
+        </div>
+
+        <div class="campo">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" value="<%= valores.email || '' %>">
+        </div>
+
+        <div class="campo">
+            <label for="sala">Sala de Estudio:</label>
+            <select id="sala" name="sala">
+                <option value="Sala Norte" <%= valores.sala === 'Sala Norte' ? 'selected' : '' %>>Sala Norte</option>
+                <option value="Sala Sur" <%= valores.sala === 'Sala Sur' ? 'selected' : '' %>>Sala Sur</option>
+                <option value="Sala Multimedia" <%= valores.sala === 'Sala Multimedia' ? 'selected' : '' %>>Sala Multimedia</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" value="<%= valores.fecha || '' %>">
+        </div>
+
+        <div class="campo">
+            <label for="turno">Turno:</label>
+            <select id="turno" name="turno">
+                <option value="Mañana" <%= valores.turno === 'Mañana' ? 'selected' : '' %>>Mañana</option>
+                <option value="Tarde" <%= valores.turno === 'Tarde' ? 'selected' : '' %>>Tarde</option>
+                <option value="Noche" <%= valores.turno === 'Noche' ? 'selected' : '' %>>Noche</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="personas">Cantidad de Personas (1 a 6):</label>
+            <input type="number" id="personas" name="personas" min="1" max="6" value="<%= valores.personas || '' %>">
+        </div>
+
+        <button type="submit" class="boton boton-primario" style="margin-top: 1rem;">Confirmar y Reservar</button>
+    </form>
+</div>

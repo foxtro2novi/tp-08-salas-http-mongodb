@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "estudiante": "Juan Pérez",
+    "email": "juan@mail.com",
+    "sala": "Sala Norte",
+    "fecha": "2026-10-15",
+    "turno": "Mañana",
+    "personas": 4
+  },
+  {
+    "id": 2,
+    "estudiante": "María Gómez",
+    "email": "maria@mail.com",
+    "sala": "Sala Sur",
+    "fecha": "2026-10-16",
+    "turno": "Tarde",
+    "personas": 2
+  },
+  {
+    "id": 3,
+    "estudiante": "Carlos López",
+    "email": "carlos@mail.com",
+    "sala": "Sala Multimedia",
+    "fecha": "2026-10-17",
+    "turno": "Noche",
+    "personas": 6
+  },
+  {
+    "id": 4,
+    "estudiante": "Ana Martínez",
+    "email": "ana@mail.com",
+    "sala": "Sala Norte",
+    "fecha": "2026-10-18",
+    "turno": "Tarde",
+    "personas": 3
+  },
+  {
+    "id": 5,
+    "estudiante": "Luis Rodríguez",
+    "email": "luis@mail.com",
+    "sala": "Sala Sur",
+    "fecha": "2026-10-19",
+    "turno": "Mañana",
+    "personas": 5
+  },
+  {
+    "id": 6,
+    "estudiante": "Elena Fernández",
+    "email": "elena@mail.com",
+    "sala": "Sala Multimedia",
+    "fecha": "2026-10-20",
+    "turno": "Tarde",
+    "personas": 1
+  },
+  {
+    "id": 7,
+    "estudiante": "Pedro García",
+    "email": "pedro@mail.com",
+    "sala": "Sala Norte",
+    "fecha": "2026-10-21",
+    "turno": "Noche",
+    "personas": 4
+  },
+  {
+    "id": 8,
+    "estudiante": "Sofía Díaz",
+    "email": "sofia@mail.com",
+    "sala": "Sala Sur",
+    "fecha": "2026-10-22",
+    "turno": "Mañana",
+    "personas": 2
+  }
+]
